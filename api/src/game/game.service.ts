@@ -17,13 +17,11 @@ export class GameService {
           const result = await this.http.get(
             `https://gamerpower.p.rapidapi.com/api/giveaways?platform=pc`,
             { headers: headersRequest },
-
           );
 
-      
           return result.pipe(
                 map(response => response.data)
-           );;
+           );
           
     }
 }

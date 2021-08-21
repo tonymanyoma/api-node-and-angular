@@ -10,7 +10,5 @@ export class GameController {
     @Get('/games')
     getGames(){
         return this.gameService.getGames();
-
-        // return 'juegos';
     }
 }
