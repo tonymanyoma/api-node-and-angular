@@ -1,1 +1,37 @@
-<p>product-list works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="title">Product list</span>
+                    <button class="btn btn-success float-end" routerLink="/add-product">NEW</button>
+                    <table class="table table-striped mt-3" *ngIf="listProducts.length > 0">
+                        <thead>
+                          <tr>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Price</th>
+                            <th>Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let product of listProducts">
+                            <td><img [src]="product.imageURL" class="rounded product-img" ></td>
+                            <td>{{product.name}}</td>
+                            <td>{{ product.description}}</td>
+                            <td>{{ product.price | currency: 'COP'}}</td>
+                            <td>
+                                <i [routerLink]="['/edit-product', product._id]" class="fas fa-edit text-primary"></i>
+                                <i (click)="deleteProduct(product._id)" class="fas fa-trash text-danger"></i>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                      <h5 class="title2" *ngIf="listProducts.length == 0">No hay productos registrados</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
