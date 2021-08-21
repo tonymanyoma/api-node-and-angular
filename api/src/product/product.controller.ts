@@ -3,6 +3,8 @@ import { get } from 'http';
 import { CreateProductDTO } from './dto/product.dto'
 
 import { ProductService } from './product.service'
+
+
 @Controller('product')
 export class ProductController {
 
@@ -51,4 +53,6 @@ export class ProductController {
            updatedProduct: updatedProduct
        })
     }
+
+    
 }
