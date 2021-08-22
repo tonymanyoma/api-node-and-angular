@@ -27,7 +27,7 @@
 
 # Endpoint adicional 
 
-se vinculó un api llamada gamerpower la cual provee información sobre video juegos
+se vinculó un api llamada gamerpower la cual provee información sobre video juegos https://rapidapi.com/digiwalls/api/gamerpower/
 
-> http://localhost:3000/game/games   -> retorna todos los viedo juegos gratis para pc
+> http://localhost:3000/game/games   -> retorna todos los video juegos gratis para pc
 
