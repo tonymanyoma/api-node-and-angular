@@ -9,7 +9,7 @@
 
 # Ejecución
 1. Clonar repositorio
-2. Ejecutar npm install en la carpeta front y backend
+2. Ejecutar npm install en la carpeta front y api
 3. Ejecutar api con el comando npm run start:dev (el servidor se ejecutará en localhost:3000)
 4. Ejecutar front con el comando ng serve (el servidor se ejecutará en localhost:4200)
 
