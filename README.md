@@ -16,9 +16,13 @@
 # Endpoints disponibles
 
 > http://localhost:3000/product/   -> retorna todos los productos
+
 > http://localhost:3000/product/"idproducto" -> busca un producto por id
+
 > http://localhost:3000/product/delete?productID="idproducto" -> elimina un producto
+
 > http://localhost:3000/product/update?productID="idproducto" -> actualiza un producto
+
 > http://localhost:3000/product/create -> crea un producto
 
 # Endpoint adicional 
